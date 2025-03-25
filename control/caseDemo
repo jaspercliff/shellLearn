@@ -1,0 +1,15 @@
+echo "please enter a number between 1 and 4"
+read n
+case $n in
+1) echo "you choose 1"
+;;
+2) echo "you choose 2"
+;;
+3) echo "you choose 3"
+;;
+4) echo "you choose 4"
+;;
+*) echo "you choose other"
+;;
+esac
+

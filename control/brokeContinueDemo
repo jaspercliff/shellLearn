@@ -1,0 +1,16 @@
+while :
+  do 
+    echo "please enter a numer between 1 and 5"
+    read n
+    case $n in 
+        1|2|3|4|5)
+        echo "you enter $n"
+        ;;
+        *) 
+        echo "not 1 - 5"
+        # break
+        continue
+      ;;
+    esac
+  done
+

@@ -1,0 +1,18 @@
+#  基本用法
+echo {a,b,c}
+
+#  扩展多个部分
+echo {a,b,c}{1,2,3}
+
+mkdir -p ./test/{docs,images,videos}
+# 创建三个目录：/test/docs, /test/images, 和 /test/videos。
+
+echo {a..z}
+echo {A..Z}
+# a b c d e f g h i j k l m n o p q r s t u v w x y z
+# A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+echo {file{1,2,3},file{a,b,c}}
+# file1 file2 file3 filea fileb filec
+
+mv ./test{,.bak}

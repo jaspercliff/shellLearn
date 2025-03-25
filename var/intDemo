@@ -1,0 +1,2 @@
+declare -i  a=30
+echo ${a}

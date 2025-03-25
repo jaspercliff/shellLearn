@@ -1,0 +1,13 @@
+name='jasper'
+echo $name
+echo ${name}
+
+name='cliff'
+echo $name
+
+readonly name 
+name='haha'
+
+unset name
+echo $name
+

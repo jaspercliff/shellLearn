@@ -1,0 +1,7 @@
+echo '按下ctrl + D 退出'
+echo 'please enter your favorite website'
+while read website
+  do 
+    echo " $website is a good website"
+  done 
+

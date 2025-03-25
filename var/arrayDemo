@@ -1,0 +1,9 @@
+my_arr=(1 2 3 4 5)
+# 获取整个数组
+echo ${my_arr[@]}
+# 获取第一个元素
+echo ${my_arr[0]}
+
+declare -A ass_arr
+ass_arr=([name]='jasper' [age]=20)
+echo ${ass_arr[name]}
