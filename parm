@@ -1,0 +1,19 @@
+echo "shell 传递参数"
+echo "参数文件名：$0"
+echo "第一个参数: $1"
+echo "第二个参数: $2"
+echo "参数的个数: $#"
+echo "$*"
+echo "$@"
+echo "进程id:$$"
+sleep 100 &    # 将 sleep 100 放入后台
+echo "运行的最后一个进程id $!"        # 显示 sleep 100 进程的 PID，例如 12345
+kill $!        # 终止该后台进程
+echo "最后命令的状态 $?"
+
+cp file1.txt /some/nonexistent/path
+if [ $? -ne 0 ]; then
+    echo "复制失败"
+else
+    echo "复制成功"
+fi

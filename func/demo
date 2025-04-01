@@ -1,0 +1,4 @@
+echoA() {
+    echo "test"
+}
+echoA
