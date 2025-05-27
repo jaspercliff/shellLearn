@@ -1,0 +1,22 @@
+a="123"
+b=""
+
+if [ -z $b ]
+then
+    echo " -z determine whether the str length = 0"
+fi
+
+if [ -n $a ]
+then
+  echo "-n determine wherher the str length != 0"
+fi
+
+if [ $b ]
+  then
+  echo '$ determine wherher the str is not null'
+fi
+if [ $a ]
+  then
+  echo '$ determine wherher the str is not null'
+fi
+
