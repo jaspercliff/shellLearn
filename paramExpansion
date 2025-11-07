@@ -1,0 +1,6 @@
+echo ${name:-default}  # if name is unset or null,use default    
+echo ${name:=changeOrigne} # if name is unset or null,set it to changeOrigne and return that value
+echo ${name}
+echo ${var:+altValur} # if var is set and not null, return altValue,else return null
+var='something'
+echo ${var:+altValue}
